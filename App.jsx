@@ -29,21 +29,21 @@ const App = () => {
         <div>
           <label>
             Loan Amount:{' '}
-            <input type="number" name="loan-amount" required />
+            <input type="number" name="loan-amount" step="0.01" />
           </label>
         </div>
         <br />
         <div>
           <label>
             Loan Term (years):{' '}
-            <input type="number" name="loan-term" required />
+            <input type="number" name="loan-term"  step="0.01" />
           </label>
         </div>
         <br />
         <div>
           <label>
             Interest Rate (%):{' '}
-            <input type="number" name="interest-rate" required />
+            <input type="number" name="interest-rate" step="0.01" />
           </label>
         </div>
         <br />
@@ -68,5 +68,4 @@ const App = () => {
     </div>
   );
 };
-
 export default App;
